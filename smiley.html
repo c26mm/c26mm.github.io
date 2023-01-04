@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>stars</title>
+</head>
+<style type="text/css">
+#smiley{
+height: 200px;
+width:200px;
+background-image: url(smiley.png);
+background-repeat:no-repeat;
+background-size:contain;
+position: absolute;
+
+
+}
+
+
+
+</style>
+<body>
+
+<div id="smiley"</div>
+
+
+
+<script type="text/javascript">
+
+document.addEventListener("click",function makeSmiley(event){
+
+smiley.style.left = event.clientX -200 + "px";
+smiley.style.top = event.clientY -200 + "px";
+
+//console.log will record coordinates in the console
+
+
+console.log(event.clientX);
+console.log(event.clientY);
+
+
+
+})
+
+
+
+</script>
+</body>
+</html>
+

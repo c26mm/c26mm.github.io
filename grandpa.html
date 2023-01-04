@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+	#box{
+		background-color: lightpink;
+		height: 5000px;
+		width: 5000px;
+	}
+
+	#present{
+		background-image: url(https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX31502661.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		image align-content: center;
+	}
+
+	#openpresent{
+		background-image: url();
+	}
+
+
+	</style>
+
+
+</head>
+<body>
+
+	<audio id= "song" src="birthday.mp4"></audio>
+<!-- Our strategy for doing different things on every-other-click: -->
+
+<!-- 1. Count the clicks and store them in a variable
+2. if the click is even do one thing,
+3. if the click is odd then do another thing -->
+
+<script type="text/javascript">
+		var counter = 0
+	document.addEventListener("click",
+		function(){
+				counter=counter+1; 
+
+				if (counter%2==0)
+					{soung.pause()
+				photo.style.backgroundImage = 
+					"url()"
+					}
+
+				if(counter%2==1)
+					{song.pause()
+				photo.style.backgroundImage =
+					"url()"
+
+				}
+
+
+		}
+
+		)
+
+
+	
+	let counter = 0;
+
+document.addEventListener("click", 
+	function(){
+
+	counter = counter+1;
+		console.log(counter)
+
+		if (counter%2==0)
+			document.body.style.backgroundColor = "pink"
+
+		if (counter%2==1)
+			document.body.style.backgroundColor = "blue"
+
+	})
+
+
+
+</script>
+
+<div class="photo" id = "present"></div>
+<div class="photo" id ="openpresent"></div>
+
+
+<div id ="box"></div>
+
+<audio src="" id="song"></audio>
+
+
+</body>
+</html>

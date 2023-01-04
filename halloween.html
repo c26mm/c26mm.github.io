@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<style type="text/css">
+			
+			.ghost{
+				width:150 ;
+				height:150;
+				background-image:url(ghost.png);
+
+				display: cover;
+
+			}
+
+
+		</style>
+
+
+
+
+</head>
+
+
+<body style="background-color: black;">
+	<script type="text/javascript">
+
+		funtion makeGhost () {
+			let ghost = document.createElement("div");
+			document.body,appendChild(ghost);
+			ghost.classList.add("ghost")
+		}
+
+		setInterval(makeGhost, 100)
+
+</style>
+	
+	<div class="ghost"></div>
+
+</body>
+</html>
