@@ -6,6 +6,8 @@
 	<title></title>
 </head>
 <body>
+
+	<audio id= "song" src="GrandpaSong.mp4"></audio>
 <!-- Our strategy for doing different things on every-other-click: -->
 
 <!-- 1. Count the clicks and store them in a variable
@@ -13,6 +15,30 @@
 3. if the click is odd then do another thing -->
 
 <script type="text/javascript">
+		var counter = 0
+	document.addEventListener("click",
+		function(){
+				counter=counter+1; 
+
+				if (counter%2==0)
+					{soung.pause()
+				photo.style.backgroundImage = 
+					"url()"
+					}
+
+				if(counter%2==1)
+					{song.pause()
+				photo.style.backgroundImage =
+					"url()"
+
+				}
+
+
+		}
+
+		)
+
+
 	
 	let counter = 0;
 
@@ -32,6 +58,10 @@ document.addEventListener("click",
 
 
 </script>
+
+
+
+
 
 <div id ="box"></div>
 
