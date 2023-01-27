@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style type="text/css">
+		.breakfast{
+			width:100px;
+			height:100px;
+			background-color:lightblue;
+			display:inline-block;
+			margin: 3px;
+			background-image: url(https://europastry.com/global/wp-content/uploads/sites/17/2022/04/EP-copia-8-100.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		body{
+			font-size: 40px;
+			color: mediumpurple;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+
+
+Want a croissant?! Or you can have a chocolate one!
+
+
+
+<br>
+
+<script type="text/javascript">
+	
+
+	function makeCroissant(placeholder){
+	var croissant = document.createElement("div");
+	document.body.appendChild(croissant)
+	croissant.classList.add("breakfast")
+	croissant.innerText = placeholder;
+
+	croissant.addEventListener("click", function(){
+		croissant.style.backgroundImage="url(https://images.squarespace-cdn.com/content/v1/5287fa22e4b0f296720af5f7/1440878884280-TAQ8HDMWJ0TRFRS7CV8L/image-asset.jpeg)"
+
+
+	})
+
+
+}
+
+for (var i=1; i<1002;i=i+1) 
+	{makeCroissant(i)}
+
+
+
+</script>
+
+</body>
+
+
+</body>
+</html>

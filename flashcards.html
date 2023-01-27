@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+<style type="text/css">
+	
+	div{
+		width:600px ;
+		height:300px ;
+		border:1px solid blue ;
+	}
+
+	#title{
+		font-size: 50px;
+		color: lightskyblue;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="title">
+	
+Do you know your baseball teams???
+
+</div>
+
+
+<div id =box1></div>	
+<div id=box2></div>
+
+
+
+<script type="text/javascript">
+	
+	var baseballTeam = ["Yankees", "Mets", "Rays", "Dodgers", "Giants", "Astros", "Guardians", "Braves", "Red Sox", "Blue Jays", "Cubs", "Angels", "White Sox", "Twins", "Rangers", "Pirates", "Orioles", "Marlins", "Tigers", "Mariners", "Athletics", "Nationals", "Royals", "Padres"]
+	var baseballPlace = ["New York", "New York", "Tampa Bay", "Los Angeles", "San Francisco", "Houston", "Cleveland", "Atlanta", "Boston", "Toronto", "Chicago", "Los Angeles",, "Chicago", "Minnesota", "Texas", "Pittsburgh", "Baltimore", "Miami", "Detroit", "Seattle", "Oakland", "Washington", "Kansas City", "San Diego"]
+
+function wait (){
+
+		box2.innerText = baseballPlace[number]
+
+
+}
+
+var number;
+	
+	document.addEventListener("click", function(){
+
+	number = Math.round(Math.random()*2); 
+
+
+	box1.innerText = baseballTeam [number]
+
+	setTimeout(wait, 2000)
+
+
+
+	})
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
