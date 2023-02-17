@@ -31,8 +31,14 @@
 	}
 
 
-	#message: hover{
-		
+	#message{
+		opacity: 0;
+
+	}
+
+	#teddy{
+		opacity: 0;
+
 	}
 
 </style>
@@ -45,16 +51,14 @@ Send this to someone you love!
 
 
 
-<script type="text/javascript">
-	
-	document.addEventListener()
 
-</script>
 
 
 <center>
 <div id="teddy">
 	<div id="message">
+
+
 		HAPPY 
 		<br>
 		VALENTINES 
@@ -64,6 +68,22 @@ Send this to someone you love!
 
 
 </div></center>
+
+<script type="text/javascript">
+	
+	message.addEventListener("click", function () {
+		message.style.opacity = "1";
+
+		
+	})
+
+	teddy.addEventListener("click", function () {
+		teddy.style.opacity = "1";
+
+		
+	})
+
+</script>
 
 
 </body>
