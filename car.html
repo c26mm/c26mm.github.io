@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+
+		body{
+			background-color: lightskyblue;
+		}
+
+		#buggy{
+			width:500px;
+			height:200px;
+			background-color:blue;
+			right:10px;
+			top: 30%;
+			position:absolute;
+			background-image: url(https://www.yankeetrails.com/img/buses/Yankee-Trails-Charter-Bus-Rental-1911743757838.JPG);
+		}
+
+
+		#writing{
+			font-size: 50px;
+			color: whitesmoke;
+		}
+
+		#camp{
+			width: 250px;
+			height: 250px;
+			size: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			left: 10px;
+			top: 60px;
+			background-image:url(https://www.pointopines.com/wp-content/uploads/2020/12/snap-pop-road-sign.jpg);
+		}
+
+		#instructions{
+			font-size: 30px;
+			color: whitesmoke;
+		}
+
+		#pineapple{
+			width: 250px;
+			height: 250px;
+			size: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+			background-image: url(https://seeswim.com/wp-content/uploads/cc_resize/Brant-Lake-Beach-5902-600x600.jpg);
+			margin-left: 525px;
+			margin-top: -250px;
+
+
+		}
+	</style>
+</head>
+<body>
+
+
+<div id = "writing">
+	
+	On our way home (TO camp yay) !!!!
+
+</div>
+
+<div id ="instructions">
+	
+	(use arrows to drive)
+
+</div>
+
+	<div id="buggy"></div>
+
+	<div id="camp"></div>
+
+	<div id="pineapple"></div>
+
+	<script type="text/javascript">
+		buggy.style.right = "0px";
+
+		 var x = parseInt(buggy.style.right);
+
+		document.addEventListener("keydown", function(event){
+			console.log(event.keyCode)
+
+			if(x>150 && x<250){
+						alert("pissing pineapple song!")
+
+					}
+
+			if(x>750){
+						alert("welcome to camp!")
+
+					}
+
+						
+
+
+			if(event.keyCode ==39){
+			x = x-50;
+
+			buggy.style.right = x +"px";
+
+}
+			else if(event.keyCode ==37){
+			x = x+50
+
+			buggy.style.right = x +"px";
+}
+		})
+
+		// var x = 0;
+		// document.addEventListener("keydown", function(event){
+
+		// 		if(event.keyCode == 39){
+		// 			x = x-10
+		// 			buggy.style.right = x +'px';
+		// 			console.log(x)
+
+		// 		}
+
+		// 			if(x<150){
+		// 				alert(pissing pineapple song)
+		// 			}
+
+		// 		})
+
+
+	</script>
+
+</body>
+</html>
