@@ -1,0 +1,69 @@
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+
+		<style type="text/css">
+			p{
+				background-color: rgba(0, 0, 0, .5);
+				color: white;
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section 
+				data-backround-image="gif.jpg"
+				data-background-color="pink">Hi, my name is Mackenzie and I am 15 years old.</section>
+
+				<section 
+				data-background-color="lightgreen"
+				data-background-image="tennis.jpg"
+				data-background-size="contain"><p>I love to play tennis - I play for the Dalton team!<p></section>
+
+				<section 
+				data-background-color="yellow"
+				data-background-image="softballs.png"
+				data-background-size="contain"><p>I also love to play softball - I play for the Dalton team!<p></section>
+
+				<section 
+				data-background-color="blue"
+				data-background-image="yankee.jpg"
+				data-background-size="contain"><p>I am a big fan for the New York Yankees and the New York Giants --> this is when I caught a ball:)<p></section> 
+
+				<section 
+				data-background-color="salmon"
+				data-background-image="tuna.jpg"
+				data-background-size="contain"><p>My favorite food is called a tuna bomb!<p></section> 
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
